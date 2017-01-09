@@ -1,12 +1,14 @@
 defmodule HelloPhoenix.PageController do
   use HelloPhoenix.Web, :controller
 
-  def index(conn, params) do
-    redirect conn, external: "http://elixir-lang.org/"
-  end
+   def test(conn, params) do
+     render conn, "test.html"
+   end
 
-  def redirect_test(conn, _params) do
-    text conn, "redirected man YO!"
-  end
+   def index(conn, _params) do
+     render conn, "index.html"
+   end
+
+
 
 end

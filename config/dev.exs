@@ -24,7 +24,9 @@ config :hello_phoenix, HelloPhoenix.Endpoint,
       ~r{web/views/.*(ex)$},
       ~r{web/templates/.*(eex)$}
     ]
-  ]
+  ],
+    debug_errors: false,
+    code_reloader: true
 
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"
