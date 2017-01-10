@@ -6,7 +6,9 @@ defmodule HelloPhoenix.PageController do
    end
 
    def index(conn, _params) do
-     render conn, "index.html"
+     conn
+       |> put_layout(false)
+       |> render "index.html"
    end
 
 

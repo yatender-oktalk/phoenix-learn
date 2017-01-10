@@ -21,6 +21,7 @@ defmodule HelloPhoenix.Router do
 #    get "/hello",HelloController, :index
 #    get "/hello/:messenger", HelloController, :show
     resources "/users", UserController
+
   end
  # New route for redirects
 #  scope "/", HelloPhoenix do
